@@ -7,3 +7,8 @@ variable "content" {
   default = "my dog name is dogs"
   type    = string
 }
+
+variable "prefix" {
+default = "MR"
+}
+
