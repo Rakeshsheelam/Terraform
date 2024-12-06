@@ -16,3 +16,13 @@ resource "random_pet" "racey" {
   separator = "."
   length    = "2"
 }
+
+resource "local_file" "data" {
+  filename = "pets.txt"
+  content  = data.local_file.dog.content
+
+}
+
+data "local_file" "dog" {
+  filename = "dog.txt"
+}
