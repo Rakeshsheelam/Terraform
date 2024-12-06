@@ -15,3 +15,4 @@ resource "random_pet" "racey" {
   prefix    = "MR"
   separator = "."
   length    = "2"
+}
